@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -169,6 +170,7 @@ public class Registration extends AppCompatActivity {
         User newUser = new User(name, email,age,height,weight,
                 arm, chest, waist,hips,oneHip,shin);
         new UserPlanCreator(Registration.this).userRegistration(newUser, password);
+
     }
 
 

@@ -13,6 +13,8 @@ import android.view.View;
 import android.widget.Toast;
 
 import com.example.fitapp.R;
+import com.example.fitapp.model.FirebaseDatabaseHelper;
+import com.example.fitapp.model.User;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
@@ -29,10 +31,10 @@ public class MainActivity extends AppCompatActivity {
                 = PreferenceManager.getDefaultSharedPreferences(MainActivity.this);
         String email = myPreferences.getString("LOGIN", "");
         String password = myPreferences.getString("PASSWORD", "");
-        if (!email.equals("")&!password.equals("")){
-            FirebaseAuth mAuth = FirebaseAuth.getInstance();
-            UserLogIn(mAuth, email, password);
-        }
+        /*if (!email.equals("")&!password.equals("")){
+
+            UserLogIn(email, password);
+        }*/
     }
 
     public void startRegistration(View v){
@@ -43,27 +45,20 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, LoginActivity.class);
         startActivity(intent);
     }
-    private void UserLogIn(FirebaseAuth mAuth, String e, String p) {
-
-
-        ProgressDialog progressDialog=new ProgressDialog(MainActivity.this);
-        progressDialog.setTitle("Вход");
-        progressDialog.show();
-        mAuth.signInWithEmailAndPassword(e, p).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+    private void UserLogIn(String e, String p) {
+        new FirebaseDatabaseHelper(MainActivity.this).UserLogIn(e, p, "Вход", new FirebaseDatabaseHelper.UserStatus() {
             @Override
-            public void onComplete(@NonNull Task<AuthResult> task) {
-                if (task.isSuccessful()){
-                    progressDialog.dismiss();
-                    Toast.makeText(MainActivity.this, "Добро пожаловать", Toast.LENGTH_SHORT).show();
-                    Intent intent = new Intent(MainActivity.this, PlanActivity.class);
-                    startActivity(intent);
-                }
-                else{
-                    Toast.makeText(MainActivity.this, "Что-то пошло не так!", Toast.LENGTH_SHORT).show();
+            public void DataIsLoaded(User user) {
 
-                }
+            }
+
+            @Override
+            public void UserLogin() {
+                Intent intent = new Intent(MainActivity.this, PlanActivity.class);
+                startActivity(intent);
             }
         });
+
 
     }
 }

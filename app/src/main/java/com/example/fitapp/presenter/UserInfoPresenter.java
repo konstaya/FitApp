@@ -1,22 +1,17 @@
 package com.example.fitapp.presenter;
 
-import static com.example.fitapp.R.drawable.bad_training;
-
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.preference.PreferenceManager;
 import android.util.Log;
-import android.view.View;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
-import android.widget.TextClock;
 import android.widget.TextView;
 
 import com.example.fitapp.R;
 import com.example.fitapp.model.FirebaseDatabaseHelper;
 import com.example.fitapp.model.User;
-import com.example.fitapp.view.PlanActivity;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -30,7 +25,7 @@ public class UserInfoPresenter {
     }
 
     public void setPlanActivityInfo(RelativeLayout relativeLayout, TextView textView){
-        new FirebaseDatabaseHelper(context).UserAuth(new FirebaseDatabaseHelper.UserStatus() {
+        new FirebaseDatabaseHelper(context).UserDatabase(new FirebaseDatabaseHelper.UserStatus() {
             @SuppressLint("UseCompatLoadingForDrawables")
             @Override
             public void DataIsLoaded(User user) {
@@ -48,16 +43,24 @@ public class UserInfoPresenter {
                 }
 
             }
+            @Override
+            public void UserLogin() {
+
+            }
         });
 
     }
     @SuppressLint("UseCompatLoadingForDrawables")
     public void setUserProfileInfo(TextView name, TextView text, ImageView imageView){
-        new FirebaseDatabaseHelper(context).UserAuth(new FirebaseDatabaseHelper.UserStatus() {
+        new FirebaseDatabaseHelper(context).UserDatabase(new FirebaseDatabaseHelper.UserStatus() {
             @SuppressLint("UseCompatLoadingForDrawables")
             @Override
             public void DataIsLoaded(User user) {
                 name.setText(user.getName());
+            }
+            @Override
+            public void UserLogin() {
+
             }
         });
         if (readLastDateDiff()>7) {

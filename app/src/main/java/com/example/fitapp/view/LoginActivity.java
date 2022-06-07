@@ -16,6 +16,8 @@ import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.example.fitapp.R;
+import com.example.fitapp.model.FirebaseDatabaseHelper;
+import com.example.fitapp.model.User;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
@@ -27,7 +29,7 @@ public class LoginActivity extends AppCompatActivity {
     Button signIn;
     ImageView btnExit;
 
-    private FirebaseAuth mAuth;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,7 +40,7 @@ public class LoginActivity extends AppCompatActivity {
         signIn = (Button) findViewById(R.id.btn_signIn);
         btnExit = (ImageView) findViewById(R.id.btnSignIn_exit);
 
-        mAuth = FirebaseAuth.getInstance();
+
         signIn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -95,25 +97,19 @@ public class LoginActivity extends AppCompatActivity {
             return;
         }
 
-
-        ProgressDialog progressDialog=new ProgressDialog(LoginActivity.this);
-        progressDialog.setTitle("Авторизация");
-        progressDialog.show();
-        mAuth.signInWithEmailAndPassword(e, p).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+        new FirebaseDatabaseHelper(LoginActivity.this).UserLogIn(e, p, "Авторизация", new FirebaseDatabaseHelper.UserStatus() {
             @Override
-            public void onComplete(@NonNull Task<AuthResult> task) {
-                if (task.isSuccessful()){
-                    progressDialog.dismiss();
-                    Toast.makeText(LoginActivity.this, "Добро пожаловать", Toast.LENGTH_SHORT).show();
-                    Intent intent = new Intent(LoginActivity.this, PlanActivity.class);
-                    startActivity(intent);
-                }
-                else{
-                    Toast.makeText(LoginActivity.this, "Что-то пошло не так! Проверьте логин и пароль.", Toast.LENGTH_SHORT).show();
-                    email.requestFocus();
-                }
+            public void DataIsLoaded(User user) {
+
+            }
+
+            @Override
+            public void UserLogin() {
+                Intent intent = new Intent(LoginActivity.this, PlanActivity.class);
+                startActivity(intent);
             }
         });
+
 
     }
 }

@@ -1,6 +1,10 @@
 package com.example.fitapp.model;
 
 import android.content.Context;
+import android.content.Intent;
+
+import com.example.fitapp.view.LoginActivity;
+import com.example.fitapp.view.PlanActivity;
 
 import java.util.ArrayList;
 import java.util.Collections;

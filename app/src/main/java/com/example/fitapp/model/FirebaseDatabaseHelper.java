@@ -2,6 +2,7 @@ package com.example.fitapp.model;
 
 import android.app.ProgressDialog;
 import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.preference.PreferenceManager;
 import android.util.Log;
@@ -11,6 +12,9 @@ import androidx.annotation.NonNull;
 
 import com.example.fitapp.model.Exercise;
 import com.example.fitapp.presenter.TrainingPresenter;
+import com.example.fitapp.view.LoginActivity;
+import com.example.fitapp.view.MainActivity;
+import com.example.fitapp.view.PlanActivity;
 import com.example.fitapp.view.Registration;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -46,6 +50,7 @@ public class FirebaseDatabaseHelper {
     }
     public interface UserStatus{
         void DataIsLoaded(User user);
+        void UserLogin();
     }
 
     public FirebaseDatabaseHelper() {
@@ -78,15 +83,18 @@ public class FirebaseDatabaseHelper {
                                     .setValue(newUser).addOnCompleteListener(new OnCompleteListener<Void>() {
                                 @Override
                                 public void onComplete(@NonNull Task<Void> task) {
-                                    progressDialog.dismiss();
+
                                     if (task.isSuccessful()){
+
                                         Toast.makeText(context, "Вы успешно зарегистрировались!", Toast.LENGTH_LONG).show();
+
                                     }
                                     else Toast.makeText(context, "Что-то пошло не так", Toast.LENGTH_LONG).show();
                                 }
                             });
                         }
                         else Toast.makeText(context, "Ой, что-то пошло не так", Toast.LENGTH_LONG).show();
+                        progressDialog.dismiss();
                     }
                 });
         SharedPreferences myPreferences
@@ -100,7 +108,30 @@ public class FirebaseDatabaseHelper {
         myEditor.apply();
     }
 
-    public void UserAuth(UserStatus dataStatus){
+    public void UserLogIn(String email, String password, String loadText, UserStatus datastatus){
+        FirebaseAuth mAuth = FirebaseAuth.getInstance();
+        ProgressDialog progressDialog=new ProgressDialog(context);
+        progressDialog.setTitle(loadText);
+        progressDialog.show();
+        mAuth.signInWithEmailAndPassword(email, password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+            @Override
+            public void onComplete(@NonNull Task<AuthResult> task) {
+                if (task.isSuccessful()){
+
+                    Toast.makeText(context, "Добро пожаловать", Toast.LENGTH_SHORT).show();
+                    datastatus.UserLogin();
+                }
+                else{
+                    Toast.makeText(context, "Что-то пошло не так!", Toast.LENGTH_SHORT).show();
+
+                }
+                progressDialog.dismiss();
+            }
+
+        });
+    }
+
+    public void UserDatabase(UserStatus dataStatus){
         FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
 
         String userId = user.getUid();
