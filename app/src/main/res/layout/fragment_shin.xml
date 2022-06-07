@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".view.registrationFragments.ShinFragment">
+
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/shinFrag"
+        android:fontFamily="sans-serif-black"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/dark_purple"
+        android:textSize="16sp"/>
+
+    <ImageView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/shin"
+        android:layout_marginVertical="10dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/shin"
+            android:layout_width="173dp"
+            android:layout_height="129dp"
+            android:ems="10"
+            android:hint="@string/_0"
+            android:inputType="numberDecimal"
+            android:textAlignment="center"
+            android:textColor="@color/dark_purple"
+            android:textColorHint="@color/light_purple"
+            android:textSize="96sp" />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cm"
+            android:textColor="@color/dark_purple"
+            android:textSize="16sp"/>
+    </LinearLayout>
+</LinearLayout>

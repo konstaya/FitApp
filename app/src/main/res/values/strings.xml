@@ -1,0 +1,35 @@
+<resources>
+    <string name="promo1">Тренировки</string>
+    <string name="promo2">Питание</string>
+    <string name="promo3">Здоровье</string>
+    <string name="start_text">Индивидуальный план для твоего идеального тела</string>
+    <string name="app_name">FitApp</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!--  Buttons on fragments -->
+    <string name="genderFrag">Укажите свой пол</string>
+    <string name="ageFrag">Укажите возраст</string>
+    <string name="heightFrag">Укажите рост</string>
+    <string name="weightFrag">Укажите вес</string>
+    <string name="armFrag">Обхват запястья</string>
+    <string name="chestFrag">Обхват груди</string>
+    <string name="waistFrag">Обхват талии</string>
+    <string name="hipsFrag">Обхват бедер</string>
+    <string name="one_hipFrag">Обхват одного бедра</string>
+    <string name="shinFrag">Обхват голени</string>
+    <string name="tapeWarning">Вам понадобится сантиметровая лента!</string>
+    <string name="_0">0</string>
+    <string name="cm">CM</string>
+    <string name="plan">План</string>
+    <string name="good_training">На этой неделе вы хорошо тренировались, продолжайте в том же духе</string>
+    <string name="bad_training">Кажется вы решили отдохнуть на этой неделе</string>
+</resources>

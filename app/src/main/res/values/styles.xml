@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="myButton" parent="@style/Widget.AppCompat.Button.Colored">
+        <item name="background">@drawable/round_button</item>
+        <item name="colorButtonNormal">@color/white</item>
+        <item name="colorControlHighlight">#673ab7</item>
+    </style>
+
+</resources>

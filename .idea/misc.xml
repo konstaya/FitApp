@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/home/AndroidStudioProjects/FitApp/app/src/main/res/drawable/arm.xml" value="0.19583333333333333" />
+        <entry key="..\:/Users/home/AndroidStudioProjects/FitApp/app/src/main/res/drawable/arrow.xml" value="0.19583333333333333" />
+        <entry key="..\:/Users/home/AndroidStudioProjects/FitApp/app/src/main/res/drawable/arrow_down.xml" value="0.19583333333333333" />
+        <entry key="..\:/Users/home/AndroidStudioProjects/FitApp/app/src/main/res/drawable/astenik.xml" value="0.19583333333333333" />
+        <entry key="..\:/Users/home/AndroidStudioProjects/FitApp/app/src/main/res/drawable/card_normastenik.xml" value="0.1484375" />
+        <entry key="..\:/Users/home/AndroidStudioProjects/FitApp/app/src/main/res/drawable/circle_calendar.xml" value="0.15833333333333333" />
+        <entry key="..\:/Users/home/AndroidStudioProjects/FitApp/app/src/main/res/drawable/circle_counter.xml" value="0.19583333333333333" />
+        <entry key="..\:/Users/home/AndroidStudioProjects/FitApp/app/src/main/res/drawable/circle_progress.xml" value="0.1578125" />
+        <entry key="..\:/Users/home/AndroidStudioProjects/FitApp/app/src/main/res/drawable/custom_field.xml" value="0.17760416666666667" />
+        <entry key="..\:/Users/home/AndroidStudioProjects/FitApp/app/src/main/res/drawable/custom_gender_button.xml" value="0.17916666666666667" />
+        <entry key="..\:/Users/home/AndroidStudioProjects/FitApp/app/src/main/res/drawable/custom_gender_f_button.xml" value="0.1" />
+        <entry key="..\:/Users/home/AndroidStudioProjects/FitApp/app/src/main/res/drawable/exercise_module.xml" value="0.16927083333333334" />
+        <entry key="..\:/Users/home/AndroidStudioProjects/FitApp/app/src/main/res/drawable/ic_add.xml" value="0.19583333333333333" />
+        <entry key="..\:/Users/home/AndroidStudioProjects/FitApp/app/src/main/res/drawable/ic_exercise.xml" value="0.14479166666666668" />
+        <entry key="..\:/Users/home/AndroidStudioProjects/FitApp/app/src/main/res/drawable/ic_launcher_background.xml" value="0.19583333333333333" />
+        <entry key="..\:/Users/home/AndroidStudioProjects/FitApp/app/src/main/res/drawable/ic_user_profile.xml" value="0.15833333333333333" />
+        <entry key="..\:/Users/home/AndroidStudioProjects/FitApp/app/src/main/res/drawable/logo.xml" value="0.19583333333333333" />
+        <entry key="..\:/Users/home/AndroidStudioProjects/FitApp/app/src/main/res/drawable/one_hip.xml" value="0.15833333333333333" />
+        <entry key="..\:/Users/home/AndroidStudioProjects/FitApp/app/src/main/res/drawable/plan_background.xml" value="0.15833333333333333" />
+        <entry key="..\:/Users/home/AndroidStudioProjects/FitApp/app/src/main/res/drawable/profile_module.xml" value="0.18020833333333333" />
+        <entry key="..\:/Users/home/AndroidStudioProjects/FitApp/app/src/main/res/drawable/round_button.xml" value="0.19583333333333333" />
+        <entry key="..\:/Users/home/AndroidStudioProjects/FitApp/app/src/main/res/font/.xml" value="0.125" />
+        <entry key="..\:/Users/home/AndroidStudioProjects/FitApp/app/src/main/res/layout-w1240dp/activity_login.xml" value="0.1" />
+        <entry key="..\:/Users/home/AndroidStudioProjects/FitApp/app/src/main/res/layout-w936dp/activity_login.xml" value="0.134765625" />
+        <entry key="..\:/Users/home/AndroidStudioProjects/FitApp/app/src/main/res/layout/activity_login.xml" value="0.3783068783068783" />
+        <entry key="..\:/Users/home/AndroidStudioProjects/FitApp/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/home/AndroidStudioProjects/FitApp/app/src/main/res/layout/activity_plan.xml" value="0.375" />
+        <entry key="..\:/Users/home/AndroidStudioProjects/FitApp/app/src/main/res/layout/activity_registration.xml" value="0.1" />
+        <entry key="..\:/Users/home/AndroidStudioProjects/FitApp/app/src/main/res/layout/activity_training.xml" value="0.165" />
+        <entry key="..\:/Users/home/AndroidStudioProjects/FitApp/app/src/main/res/layout/activity_user_profile.xml" value="0.14344262295081966" />
+        <entry key="..\:/Users/home/AndroidStudioProjects/FitApp/app/src/main/res/layout/exercise_fragment.xml" value="0.1796875" />
+        <entry key="..\:/Users/home/AndroidStudioProjects/FitApp/app/src/main/res/layout/exercise_list_item.xml" value="0.25" />
+        <entry key="..\:/Users/home/AndroidStudioProjects/FitApp/app/src/main/res/layout/exersise_train_list_item.xml" value="0.1640625" />
+        <entry key="..\:/Users/home/AndroidStudioProjects/FitApp/app/src/main/res/layout/fragment_age.xml" value="0.25" />
+        <entry key="..\:/Users/home/AndroidStudioProjects/FitApp/app/src/main/res/layout/fragment_arm.xml" value="0.25" />
+        <entry key="..\:/Users/home/AndroidStudioProjects/FitApp/app/src/main/res/layout/fragment_cheast.xml" value="0.16302083333333334" />
+        <entry key="..\:/Users/home/AndroidStudioProjects/FitApp/app/src/main/res/layout/fragment_chest.xml" value="0.23030303030303031" />
+        <entry key="..\:/Users/home/AndroidStudioProjects/FitApp/app/src/main/res/layout/fragment_exersise.xml" value="0.25" />
+        <entry key="..\:/Users/home/AndroidStudioProjects/FitApp/app/src/main/res/layout/fragment_gender.xml" value="0.25" />
+        <entry key="..\:/Users/home/AndroidStudioProjects/FitApp/app/src/main/res/layout/fragment_height.xml" value="0.1" />
+        <entry key="..\:/Users/home/AndroidStudioProjects/FitApp/app/src/main/res/layout/fragment_hips.xml" value="0.1" />
+        <entry key="..\:/Users/home/AndroidStudioProjects/FitApp/app/src/main/res/layout/fragment_one_hip.xml" value="0.1" />
+        <entry key="..\:/Users/home/AndroidStudioProjects/FitApp/app/src/main/res/layout/fragment_register.xml" value="0.25" />
+        <entry key="..\:/Users/home/AndroidStudioProjects/FitApp/app/src/main/res/layout/fragment_registr_mail.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/home/AndroidStudioProjects/FitApp/app/src/main/res/layout/fragment_shin.xml" value="0.1" />
+        <entry key="..\:/Users/home/AndroidStudioProjects/FitApp/app/src/main/res/layout/fragment_tape.xml" value="0.17864583333333334" />
+        <entry key="..\:/Users/home/AndroidStudioProjects/FitApp/app/src/main/res/layout/fragment_waist.xml" value="0.25" />
+        <entry key="..\:/Users/home/AndroidStudioProjects/FitApp/app/src/main/res/layout/fragment_weight.xml" value="0.1" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.1796875" />
+      </ProjectState>
+    </option>
+  </component>
+</project>

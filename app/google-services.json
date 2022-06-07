@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "728412614556",
+    "project_id": "fitness-app-taya",
+    "storage_bucket": "fitness-app-taya.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:728412614556:android:bbaf70cc337fd0c7efe259",
+        "android_client_info": {
+          "package_name": "com.example.fitapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "728412614556-sm2ijbqe9g04q7lsabtv69ir11dd1lan.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBFHfN_C3Ww-dAdAOsFl19eaBp3Ej2YnNU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "728412614556-sm2ijbqe9g04q7lsabtv69ir11dd1lan.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

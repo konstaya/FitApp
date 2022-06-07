@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_light_grey_purple"
+    tools:context=".view.LoginActivity">
+
+    <ImageButton
+        android:id="@+id/btnSignIn_exit"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/background_light_grey_purple"
+        android:src="@drawable/arrow"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/textViewWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:text="Добро пожаловать!"
+        android:textAllCaps="true"
+        android:textColor="@color/dark_purple"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextSignInEmail"
+        android:layout_width="320dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="84dp"
+        android:background="@drawable/custom_field"
+        android:backgroundTint="@color/purple"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:padding="5dp"
+        android:paddingStart="15dp"
+        android:textColorHint="#AB595273"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewWelcome"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <EditText
+        android:id="@+id/editTextSignInPassword"
+        android:layout_width="320dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/custom_field"
+        android:backgroundTint="@color/purple"
+        android:ems="10"
+        android:hint="Пароль"
+        android:inputType="textPassword"
+        android:padding="5dp"
+        android:paddingStart="15dp"
+        android:textColorHint="#AB595273"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextSignInEmail"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/btn_signIn"
+        android:layout_width="193dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="36dp"
+        android:backgroundTint="@color/dark_purple"
+        android:text="Войти"
+        android:textColor="@color/white"
+        app:cornerRadius="23dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextSignInPassword" />
+
+    <TextView
+        android:id="@+id/textViewForgotPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Забыли свой пароль?"
+        android:textColor="@color/dark_purple"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_signIn" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

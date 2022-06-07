@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.registrationFragments.GenderFragment"
+    android:baselineAligned="false"
+    android:gravity="center|top"
+    android:orientation="vertical"
+    android:textAlignment="center">
+
+    <TextView
+        android:id="@+id/textView_gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/genderFrag"
+        android:textAllCaps="true"
+        android:textColor="@color/dark_purple"
+        android:textSize="16sp"
+        tools:layout_editor_absoluteY="96dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center|top"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteY="118dp">
+
+        <Button
+            android:layout_width="172dp"
+            android:layout_height="119dp"
+
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="16dp"
+            android:drawablePadding="10dp"
+            android:paddingTop="4dp"
+            android:text="мужчина"
+            app:cornerRadius="23dp"
+            app:icon="@drawable/male"
+            app:iconPadding="10dp"
+            app:iconTint="@color/dark_purple"
+            app:strokeColor="@color/dark_purple"
+            app:strokeWidth="3dp" />
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="172dp"
+            android:layout_height="119dp"
+
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="40dp"
+            android:drawablePadding="10dp"
+            android:paddingTop="4dp"
+            android:text="Женщина"
+            app:cornerRadius="23dp"
+            app:icon="@drawable/female"
+            app:iconPadding="10dp"
+            app:iconTint="@color/pink"
+            app:strokeColor="@color/dark_purple"
+            app:strokeWidth="3dp" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+
+    android:background="@color/background_light_grey_purple"
+    android:paddingHorizontal="15dp"
+    tools:context=".view.PlanActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+
+                android:layout_marginStart="10dp"
+                android:fontFamily="@font/playfair_display_sc_bold_italic"
+                android:text="@string/plan"
+                android:textAllCaps="true"
+                android:textColor="@color/dark_purple"
+                android:textSize="20sp" />
+
+            <ImageView
+
+                android:id="@+id/btn_progileP"
+                android:layout_width="49dp"
+                android:layout_height="39dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/ic_user_profile" />
+        </RelativeLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:duplicateParentState="false"
+            android:paddingRight="10dp"
+            app:cardCornerRadius="23dp"
+            app:cardElevation="10dp">
+
+            <RelativeLayout
+                android:id="@+id/RL_body_constitution"
+                android:layout_width="match_parent"
+                android:layout_height="278dp"
+                android:background="@color/pink">
+
+                <TextView
+                    android:id="@+id/textView_body"
+                    android:layout_width="wrap_content"
+                    android:layout_height="78dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="0dp"
+                    android:fontFamily="@font/russo_one"
+                    android:letterSpacing="0.1"
+                    android:padding="20dp"
+                    android:text="Тип Фигуры"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="@color/dark_purple"
+                    android:textSize="16dp" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="10dp"
+            app:cardCornerRadius="23dp"
+            app:cardElevation="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="7"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="10dp">
+
+                <TextView
+                    android:id="@+id/monDay"
+                    android:layout_width="wrap_content"
+
+
+                    android:layout_height="100px"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/russo_one"
+                    android:gravity="center"
+                    android:text="ПН"
+                    android:textColor="@color/dark_purple"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/tuesDay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/russo_one"
+                    android:gravity="center"
+                    android:text="ВТ"
+                    android:textColor="@color/dark_purple"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/wednesDay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/russo_one"
+
+                    android:gravity="center"
+                    android:text="СР"
+                    android:textColor="@color/dark_purple"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/thursDay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/russo_one"
+                    android:gravity="center"
+                    android:text="ЧТ"
+                    android:textColor="@color/dark_purple"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/friDay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/russo_one"
+                    android:gravity="center"
+                    android:text="ПТ"
+                    android:textColor="@color/dark_purple"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/saturDay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/russo_one"
+                    android:gravity="center"
+                    android:text="СБ"
+                    android:textColor="@color/dark_purple"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/sunDay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/russo_one"
+                    android:gravity="center"
+                    android:text="ВС"
+                    android:textColor="@color/dark_purple"
+                    android:textSize="16dp" />
+
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            app:cardCornerRadius="23dp"
+            app:cardElevation="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@drawable/card_gym">
+
+                <Button
+                    android:id="@+id/btn_srt_training"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginHorizontal="40dp"
+                    android:layout_marginStart="18dp"
+                    android:layout_marginBottom="68dp"
+                    android:backgroundTint="#FDACB4"
+                    android:fontFamily="@font/russo_one"
+                    android:text="Начать Тренировку"
+                    app:cornerRadius="20dp" />
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="30dp"
+            app:cardCornerRadius="23dp"
+            app:cardElevation="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="29dp"
+                    android:layout_marginBottom="42dp"
+                    android:fontFamily="@font/russo_one"
+                    android:text="Выполнено тренировок:"
+                    android:textColor="@color/dark_purple"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/textView_progress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginEnd="29dp"
+                    android:layout_marginBottom="42dp"
+                    android:text="0"
+                    android:textColor="@color/medium_purple"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+
+
+</ScrollView>

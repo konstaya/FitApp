@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.registrationFragments.AgeFragment"
+    android:baselineAligned="false"
+    android:gravity="center|top"
+    android:orientation="vertical"
+    android:textAlignment="center"
+    >
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:elegantTextHeight="false"
+        android:fontFamily="sans-serif-black"
+        android:freezesText="false"
+        android:text="@string/ageFrag"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/dark_purple"
+        android:textSize="16sp"
+        tools:layout_editor_absoluteX="128dp" />
+
+    <EditText
+        android:id="@+id/age"
+        android:layout_width="179dp"
+        android:layout_height="138dp"
+        android:ems="10"
+        android:hint="@string/_0"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="@color/dark_purple"
+        android:textColorHighlight="#B3B3B3"
+        android:textColorHint="@color/light_purple"
+        android:textSize="96sp"
+        tools:ignore="SpeakableTextPresentCheck"
+        tools:layout_editor_absoluteX="116dp"
+        tools:layout_editor_absoluteY="22dp" />
+
+</LinearLayout>
