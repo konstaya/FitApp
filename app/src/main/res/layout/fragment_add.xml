@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".addFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="5dp">
+
+        <ImageView
+
+            android:layout_width="147dp"
+            android:layout_height="95dp"
+            android:src="@drawable/cheast" />
+
+        <EditText
+            android:id="@+id/et_newChest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:ems="10"
+            android:hint="Обхват груди"
+            android:inputType="number"
+            android:minHeight="48dp"
+            android:textAlignment="center"
+            android:textColor="@color/dark_purple"
+            android:textColorHint="#AAA9AF" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="5dp">
+
+        <ImageView
+
+            android:layout_width="147dp"
+            android:layout_height="95dp"
+            android:src="@drawable/waist" />
+
+        <EditText
+            android:id="@+id/et_newWaist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:ems="10"
+            android:hint="Обхват талии"
+            android:inputType="number"
+            android:minHeight="48dp"
+            android:textAlignment="center"
+            android:textColor="@color/dark_purple"
+            android:textColorHint="#AAA9AF" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="5dp">
+
+        <ImageView
+
+            android:layout_width="147dp"
+            android:layout_height="95dp"
+            android:src="@drawable/hips" />
+
+        <EditText
+            android:id="@+id/et_newHips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:ems="10"
+            android:hint="Обхват бедер"
+            android:inputType="number"
+            android:minHeight="48dp"
+            android:textAlignment="center"
+            android:textColor="@color/dark_purple"
+            android:textColorHint="#AAA9AF" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="5dp">
+
+        <ImageView
+
+            android:layout_width="147dp"
+            android:layout_height="95dp"
+            android:src="@drawable/one_hip" />
+
+        <EditText
+            android:id="@+id/et_oneHip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:ems="10"
+            android:hint="Обхват одного бедра"
+            android:inputType="number"
+            android:minHeight="48dp"
+            android:textAlignment="center"
+            android:textColor="@color/dark_purple"
+            android:textColorHint="#AAA9AF" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="5dp">
+
+        <ImageView
+
+            android:layout_width="147dp"
+            android:layout_height="95dp"
+            android:src="@drawable/shin" />
+
+        <EditText
+            android:id="@+id/et_newShin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:ems="10"
+            android:hint="Обхват голени"
+            android:inputType="number"
+            android:minHeight="48dp"
+            android:textAlignment="center"
+            android:textColor="@color/dark_purple"
+            android:textColorHint="#AAA9AF" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="5dp">
+
+        <ImageView
+
+            android:layout_width="147dp"
+            android:layout_height="86dp"
+            android:src="@drawable/scales" />
+
+        <EditText
+            android:id="@+id/et_newWeight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:ems="10"
+            android:hint="Вес"
+            android:inputType="number"
+            android:minHeight="48dp"
+            android:textAlignment="center"
+            android:textColor="@color/dark_purple"
+            android:textColorHint="#AAA9AF" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/medium_purple"
+        android:text="Сохранить"
+        android:textColor="@color/dark_purple"
+        app:cornerRadius="17dp"
+        tools:ignore="SpeakableTextPresentCheck">
+
+    </Button>
+</LinearLayout>

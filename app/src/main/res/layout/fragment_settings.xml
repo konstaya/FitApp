@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_light_grey_purple"
+    android:orientation="vertical"
+
+    android:paddingTop="10dp"
+    tools:context=".SettingsFragment">
+
+
+
+    <Button
+        android:id="@+id/btn_change_days"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#E7E5FF"
+        android:gravity="center"
+        android:visibility="gone"
+        android:text="Изменить дни тренировок"
+        app:cornerRadius="17dp"
+        android:elevation="15dp"/>
+
+    <Button
+        android:id="@+id/btn_logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#FFCEC7"
+        android:gravity="center"
+        android:text="Выйти из учетной записи"
+        app:cornerRadius="17dp" />
+
+</LinearLayout>

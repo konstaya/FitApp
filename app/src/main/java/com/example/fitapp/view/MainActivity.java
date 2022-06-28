@@ -31,10 +31,10 @@ public class MainActivity extends AppCompatActivity {
                 = PreferenceManager.getDefaultSharedPreferences(MainActivity.this);
         String email = myPreferences.getString("LOGIN", "");
         String password = myPreferences.getString("PASSWORD", "");
-        /*if (!email.equals("")&!password.equals("")){
+        if (!email.equals("")&!password.equals("")){
 
             UserLogIn(email, password);
-        }*/
+        }
     }
 
     public void startRegistration(View v){

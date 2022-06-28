@@ -126,6 +126,7 @@ public class UserInfoPresenter {
         SharedPreferences myPreferences
                 = PreferenceManager.getDefaultSharedPreferences(context);
         String s = myPreferences.getString("LASTDAY", "");
+
         try {
             Date today = new Date();
             Date date = dateFormat.parse(s);

@@ -9,8 +9,10 @@
         <entry key="..\:/Users/home/AndroidStudioProjects/FitApp/app/src/main/res/drawable/astenik.xml" value="0.19583333333333333" />
         <entry key="..\:/Users/home/AndroidStudioProjects/FitApp/app/src/main/res/drawable/card_normastenik.xml" value="0.1484375" />
         <entry key="..\:/Users/home/AndroidStudioProjects/FitApp/app/src/main/res/drawable/circle_calendar.xml" value="0.15833333333333333" />
+        <entry key="..\:/Users/home/AndroidStudioProjects/FitApp/app/src/main/res/drawable/circle_calendar_view.xml" value="0.1" />
         <entry key="..\:/Users/home/AndroidStudioProjects/FitApp/app/src/main/res/drawable/circle_counter.xml" value="0.19583333333333333" />
         <entry key="..\:/Users/home/AndroidStudioProjects/FitApp/app/src/main/res/drawable/circle_progress.xml" value="0.1578125" />
+        <entry key="..\:/Users/home/AndroidStudioProjects/FitApp/app/src/main/res/drawable/circle_today.xml" value="0.125" />
         <entry key="..\:/Users/home/AndroidStudioProjects/FitApp/app/src/main/res/drawable/custom_field.xml" value="0.17760416666666667" />
         <entry key="..\:/Users/home/AndroidStudioProjects/FitApp/app/src/main/res/drawable/custom_gender_button.xml" value="0.17916666666666667" />
         <entry key="..\:/Users/home/AndroidStudioProjects/FitApp/app/src/main/res/drawable/custom_gender_f_button.xml" value="0.1" />
@@ -32,10 +34,11 @@
         <entry key="..\:/Users/home/AndroidStudioProjects/FitApp/app/src/main/res/layout/activity_plan.xml" value="0.375" />
         <entry key="..\:/Users/home/AndroidStudioProjects/FitApp/app/src/main/res/layout/activity_registration.xml" value="0.1" />
         <entry key="..\:/Users/home/AndroidStudioProjects/FitApp/app/src/main/res/layout/activity_training.xml" value="0.165" />
-        <entry key="..\:/Users/home/AndroidStudioProjects/FitApp/app/src/main/res/layout/activity_user_profile.xml" value="0.14344262295081966" />
+        <entry key="..\:/Users/home/AndroidStudioProjects/FitApp/app/src/main/res/layout/activity_user_profile.xml" value="0.25" />
         <entry key="..\:/Users/home/AndroidStudioProjects/FitApp/app/src/main/res/layout/exercise_fragment.xml" value="0.1796875" />
         <entry key="..\:/Users/home/AndroidStudioProjects/FitApp/app/src/main/res/layout/exercise_list_item.xml" value="0.25" />
         <entry key="..\:/Users/home/AndroidStudioProjects/FitApp/app/src/main/res/layout/exersise_train_list_item.xml" value="0.1640625" />
+        <entry key="..\:/Users/home/AndroidStudioProjects/FitApp/app/src/main/res/layout/fragment_add.xml" value="0.375" />
         <entry key="..\:/Users/home/AndroidStudioProjects/FitApp/app/src/main/res/layout/fragment_age.xml" value="0.25" />
         <entry key="..\:/Users/home/AndroidStudioProjects/FitApp/app/src/main/res/layout/fragment_arm.xml" value="0.25" />
         <entry key="..\:/Users/home/AndroidStudioProjects/FitApp/app/src/main/res/layout/fragment_cheast.xml" value="0.16302083333333334" />
@@ -47,6 +50,7 @@
         <entry key="..\:/Users/home/AndroidStudioProjects/FitApp/app/src/main/res/layout/fragment_one_hip.xml" value="0.1" />
         <entry key="..\:/Users/home/AndroidStudioProjects/FitApp/app/src/main/res/layout/fragment_register.xml" value="0.25" />
         <entry key="..\:/Users/home/AndroidStudioProjects/FitApp/app/src/main/res/layout/fragment_registr_mail.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/home/AndroidStudioProjects/FitApp/app/src/main/res/layout/fragment_settings.xml" value="0.1640625" />
         <entry key="..\:/Users/home/AndroidStudioProjects/FitApp/app/src/main/res/layout/fragment_shin.xml" value="0.1" />
         <entry key="..\:/Users/home/AndroidStudioProjects/FitApp/app/src/main/res/layout/fragment_tape.xml" value="0.17864583333333334" />
         <entry key="..\:/Users/home/AndroidStudioProjects/FitApp/app/src/main/res/layout/fragment_waist.xml" value="0.25" />

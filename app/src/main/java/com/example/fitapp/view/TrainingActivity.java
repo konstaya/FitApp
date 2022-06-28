@@ -49,10 +49,17 @@ public class TrainingActivity extends AppCompatActivity {
                 fragmentViewTraining.setVisibility(View.VISIBLE);
                 mainLayout.setVisibility(View.GONE);
                 NestedScrollView scrollView = findViewById(R.id.nestedScrollView);
-                scrollView.setSmoothScrollingEnabled(false);
 
             }
         });
     }
 
+    @Override
+    public void onBackPressed() {
+        if (fragmentViewTraining.getVisibility()==View.VISIBLE){
+            fragmentViewTraining.setVisibility(View.GONE);
+            mainLayout.setVisibility(View.VISIBLE);
+        }
+        else super.onBackPressed();
+    }
 }

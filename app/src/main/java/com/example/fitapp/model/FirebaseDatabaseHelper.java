@@ -21,6 +21,7 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.auth.UserProfileChangeRequest;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -135,13 +136,16 @@ public class FirebaseDatabaseHelper {
         FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
 
         String userId = user.getUid();
-
+        ProgressDialog progressDialog=new ProgressDialog(context);
+        progressDialog.setTitle("Загрузка");
+        progressDialog.show();
         mUserReference.child(userId).addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 User userProfile = dataSnapshot.getValue(User.class);
                 if (userProfile != null){
                     dataStatus.DataIsLoaded(userProfile);
+                    progressDialog.dismiss();
                 }
             }
 
@@ -150,6 +154,13 @@ public class FirebaseDatabaseHelper {
                 Toast.makeText(context, "Что-то пошло не так", Toast.LENGTH_LONG).show();
             }
         });
+    }
+//,float oneHip,float shin,float weight
+    public void UpdateUser(float chest,float waist,float hips){
+        FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+        mUserReference.child(user.getUid()).child("chest").setValue(chest);
+        mUserReference.child(user.getUid()).child("waist").setValue(waist);
+        mUserReference.child(user.getUid()).child("hips").setValue(hips);
     }
 
     public void read(DataStatus dataStatus){
@@ -198,7 +209,6 @@ public class FirebaseDatabaseHelper {
 
                 }
                 dataStatus.DataIsLoaded(exs);
-
             }
 
             @Override

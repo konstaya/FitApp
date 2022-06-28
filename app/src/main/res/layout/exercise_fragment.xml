@@ -22,7 +22,7 @@
         android:layout_width="304dp"
         android:layout_height="49dp"
         android:backgroundTint="@color/purple"
-        android:fontFamily="@font/playfair_display_sc_bold_italic"
+        android:fontFamily="@font/russo_one"
         android:text="Далее"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
